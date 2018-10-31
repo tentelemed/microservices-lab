@@ -1,2 +1,3 @@
-# strimzi-lab
-A lab focused on deploying streaming applications on top of Strimzi
+# microservices-lab
+
+A lab focused on propagating data between microservices using Apache Kafka, deployed to OpenShift via Strimzi.
