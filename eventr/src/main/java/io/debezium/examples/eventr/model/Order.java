@@ -1,5 +1,7 @@
 package io.debezium.examples.eventr.model;
 
+import io.debezium.examples.eventr.aggregation.hibernate.MaterializeAggregate;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -20,6 +22,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "EventrOrder")
+@MaterializeAggregate(aggregateName="orders_with_event")
 public class Order implements Serializable {
 
     private static final long serialVersionUID = 1L;
